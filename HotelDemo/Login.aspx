@@ -51,6 +51,14 @@
                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
                    </td>
                </tr>
+               <tr>
+                   <td>
+
+                   </td>
+                  <td>
+                      <asp:Label ID="lblError" runat="server" Text="Invalid credentials"></asp:Label>
+                  </td>
+               </tr>
            </table>
         </div>
        
