@@ -19,6 +19,7 @@ namespace HotelDemo
         {
             using (SqlConnection con = new SqlConnection(@"Data Source=.; initial catalog=Hotel; integrated security=True;"))
             {
+                con.Open();
                 string query = "select count(1) from Customer where username=@username and password=@password";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
